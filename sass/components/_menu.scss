@@ -1,0 +1,39 @@
+.menu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  & .container {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+
+  &__socnet {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+    color: var(--ico-accent-color);
+    margin-top: 64px;
+  }
+
+  &__socnet-item:not(:last-child) {
+    margin-right: 20px;
+
+    & ::after {
+      position: relative;
+      left: 10px;
+      content: '';
+      width: 22px;
+      height: 0px;
+      border: 1px solid #21212133;
+      transform: rotate(90deg);
+    }
+  }
+}
+

@@ -1,0 +1,34 @@
+.portfolio {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+
+  &__title {
+    font-size: 0px;
+    margin-bottom: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column ;
+
+    @media screen and (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 30px;
+      grid-column-gap: 30px;
+      
+      @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media screen and (min-width: $desktop) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+
+}

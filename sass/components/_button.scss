@@ -1,0 +1,153 @@
+.button {
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 50px;
+  background-color: var(--btn-backgr-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px #00000026;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--face-color);
+
+  &__submit {
+    letter-spacing: 0.06em;
+    margin: 30px auto 0;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--btn-send-accent-color);
+    }
+  }
+  &__menu {
+    display: flex;
+    position: relative;
+    // top: 10px;
+    // right: 15px;
+    margin-right: 0;
+    margin-left: auto;
+    &--icon {
+      fill: var(--logo-dark-color);
+    }
+
+    &:hover &--icon,
+    &:focus &--icon {
+      fill: var(--touch-color);
+      cursor: pointer;
+    }    
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--page-color);
+    border: 1px solid #0000001a;
+    box-sizing: border-box;
+
+    &--icon {
+      fill: var(--logo-dark-color);
+    }    
+
+    &:hover &--icon,
+    &:focus &--icon {
+    fill: var(--touch-color);
+    cursor: pointer;
+    }
+  }
+
+  &__output {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    width: 19px;
+    height: 19px;
+    border: none;
+    background-color: var(--page-color);
+    &--icon {
+      fill: var(--logo-dark-color);
+    }    
+
+    &:hover &--icon,
+    &:focus &--icon {
+      fill: var(--touch-color);
+      cursor: pointer;
+    }
+  }
+
+  &__bar {
+    display: flex;
+    flex-flow: row wrap;
+    @media screen and (min-width: $tablet) {
+      justify-content: center;
+    }
+    & li:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__seek {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    background-color: var(--btn-seek-color);
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+
+    @media screen and (max-width: $tablet - 1px) {
+      margin-bottom: 15px;      
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 51px;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: var(--touch-color);
+      color: var(--face-color);
+      box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
+          0px 2px 2px #0000001f;
+    }
+  }
+
+  &__icon {
+    margin-left: 10px;
+    fill: var(--footer-color);
+  }
+  &__subscr {
+    display: flex;
+    margin: 0 auto;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    margin-top: 20px;
+    @media screen and (min-width: $desktop) {
+     margin: 0 ;
+
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    } 
+  }
+}

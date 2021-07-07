@@ -1,0 +1,36 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+  --logo-color: #2196f3;
+  --logo-light-color: #ffffff;
+  --logo-dark-color: #000000;
+  --touch-color: #2196f3;
+  --ico-accent-color: #2196f3;
+  --btn-backgr-color: #2196f3;
+  --btn-send-accent-color: #188ce8;
+  --ico-ligt-accent-color: #ffffff;
+  --ico-ligt-color: #ffffff;
+  --ico-transparent-color: #ffffff00;
+  --ico-title-color: #212121;
+  --ico-regular-color: #afb1b8;
+  --ico-custom-color: #afb1b8;
+  --background-ico-ftrs-color: #f5f4fa;
+  --btn-seek-color: #f5f4fa;
+  --page-color: #ffffff;
+  --title-color: #212121;
+  --regular-color: #757575;
+  --border-color: #ececec;
+  --prtf-border-color: #ededed;
+  --face-color: #ffffff;
+  --footer-color: #ffffff;
+  --footer-eadr-color: #ffffff99;
+  --background-face-color: #c4c4c4;
+  --background-footer-color: #2f303a;
+  --background-team-color: #f5f4fa;
+  --background-footer-icon-color: #ffffff1a;
+  --background-prtf-card-slide-color: #2196f3e6;
+  --background-inside-color: #2f303acc;
+  --background-gradient-color: #2f303a66;
+  --prtf-height-img-mobile: 294;
+  --prtf-width-img-mobile: 450;
+}

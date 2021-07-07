@@ -1,0 +1,36 @@
+.socnet {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 206px;
+  margin: 0 auto;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--ico-accent-color);
+    }
+
+    &:hover .socnet__icon,
+    &:focus .socnet__icon {
+      fill: var(--ico-ligt-accent-color);
+    }
+  }
+
+  &__icon {
+    justify-content: center;
+    align-items: center;
+    fill: var(--ico-regular-color);
+  }
+}

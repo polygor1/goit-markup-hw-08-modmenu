@@ -1,0 +1,89 @@
+.hero {
+  background-color: var(--background-face-color);
+  color: var(--page-color);
+  padding: 0;
+  justify-content: center;
+  
+  @media screen and (max-width: $tablet - 1px) {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/mobile/1x/header.jpg);
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/tablet/1x/header.jpg);
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+    url(../images/desktop/1x/header.jpg);
+  }
+
+  @media (min-resolution: 2dppx){
+
+    @media screen and (max-width: $tablet - 1px) {
+      background-image: linear-gradient(#2f303a66, #2f303a66),
+        url(../images/mobile/2x/header.jpg);
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      background-image: linear-gradient(#2f303a66, #2f303a66),
+        url(../images/tablet/2x/header.jpg);
+    }
+
+    @media screen and (min-width: $desktop) {
+      background-image: linear-gradient(#2f303a66, #2f303a66),
+        url(../images/desktop/2x/header.jpg);
+    }
+  }
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media screen and (max-width: $mobile - 1px){
+    background-size: cover;
+  }
+
+  @media screen and (min-width: $desktop) and (max-width: $desktop + 400px) {
+    background-size: cover;
+  }
+  & .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 118px 0;
+    @media screen and (min-width: $desktop) {
+      padding: 200px 0;
+      }
+  }
+
+  &__titul {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.363;
+    } 
+    letter-spacing: 0.06em;
+    color: var(--face-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__sign-link {
+    display: flex;
+    align-self: center;
+    letter-spacing: 0.06em;
+    margin-top: 30px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--touch-color);
+      @media screen and (min-width: $desktop) {
+      box-shadow: 0px 4px 4px #00000000;
+      }
+      cursor: pointer;
+    }
+  }
+}

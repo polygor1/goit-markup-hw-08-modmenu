@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="./css/modern-normalize.css" />
+  <link rel="preconnect" href="./images/icons.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Logotype -->
+      <a class="logo" href="./index.html">
+        <span class="logo__part">Web</span>Studio
+      </a>
+      <!-- Sandwich menu -->
+      <a class="button__menu touch-transform" href="./menu_portfolio.html">
+        <svg class="button__menu--icon touch-transform" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__str touch-transform " href="./index.html">Студия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__str touch-transform nav__str--current" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__str touch-transform" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- e-Adress -->
+      <div class="eadr ">
+        <a class="eadr__mail touch-transform" href="mailto:info@devstudio.com">
+          <svg class="eadr__ico touch-transform">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+        <a class="eadr__tel touch-transform" href="tel:+380961111111">
+          <svg class="eadr__ico touch-transform">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Main content -->
+  <main>
+    <section class="section">
+      <div class="container">
+        <!-- Searsh Bar -->
+        <div>
+          <ul class="button__bar">
+            <li>
+              <button class="button__seek touch-transform" type="button">
+                Всё
+              </button>
+            </li>
+            <li>
+              <button class="button__seek touch-transform" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li>
+              <button class="button__seek touch-transform" type="button">
+                Приложения
+              </button>
+            </li>
+            <li>
+              <button class="button__seek touch-transform" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button class="button__seek touch-transform" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- Portfolio -->
+        <div class="portfolio">
+          <h2 class="portfolio__title">Портфолио</h2>
+          <ul class="portfolio__list">
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg1.jpg 1x,
+                        ./images/mobile/2x/pfimg1.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg1.jpg 1x,
+                        ./images/tablet/2x/pfimg1.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg1.jpg 1x,
+                        ./images/desktop/2x/pfimg1.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg1.jpg" alt="Технокряк" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Технокряк это современная площадка
+                    распространения коронавируса.
+                    Компании используют эту платформу
+                    для цифрового шпионажа и атак на
+                    защищённые сервера конкурентов.
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Технокряк</h3>
+                <p class="card__box--text-regular">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg2.jpg 1x,
+                        ./images/mobile/2x/pfimg2.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg2.jpg 1x,
+                        ./images/tablet/2x/pfimg2.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg2.jpg 1x,
+                        ./images/desktop/2x/pfimg2.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg2.jpg" alt="Постер New Orlean vs Golden Star" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci possimus explicabo rerum natus
+                    quibusdam voluptates neque blanditiis, temporibus beatae facere deleniti quam, sint esse alias
+                    incidunt, libero quidem veritatis quasi.
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
+                <p class="card__box--text-regular">Дизайн</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg3.jpg 1x,
+                        ./images/mobile/2x/pfimg3.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg3.jpg 1x,
+                        ./images/tablet/2x/pfimg3.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg3.jpg 1x,
+                        ./images/desktop/2x/pfimg3.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg3.jpg" alt="Ресторан Seafood" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sequi aut modi nesciunt tempora
+                    voluptatum laborum ducimus quo. Ullam placeat, illo nobis molestiae adipisci corrupti dicta facere
+                    ea saepe cupiditate?
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Ресторан Seafood</h3>
+                <p class="card__box--text-regular">Приложение</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg4.jpg 1x,
+                        ./images/mobile/2x/pfimg4.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg4.jpg 1x,
+                        ./images/tablet/2x/pfimg4.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg4.jpg 1x,
+                        ./images/desktop/2x/pfimg4.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg4.jpg" alt="Проект Prime" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto at, esse tempore excepturi
+                    dignissimos quos quam ipsam rerum modi eius sit, omnis laborum culpa odio autem natus accusantium
+                    molestiae ab.
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Проект Prime</h3>
+                <p class="card__box--text-regular">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg5.jpg 1x,
+                        ./images/mobile/2x/pfimg5.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg5.jpg 1x,
+                        ./images/tablet/2x/pfimg5.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg5.jpg 1x,
+                        ./images/desktop/2x/pfimg5.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg5.jpg" alt="Проект Boxes" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ipsa labore soluta sit quaerat
+                    voluptatibus illo praesentium consectetur accusamus quasi rem libero, adipisci aliquid in maxime
+                    neque, architecto nam sequi.
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Проект Boxes</h3>
+                <p class="card__box--text-regular">Приложение</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg6.jpg 1x,
+                        ./images/mobile/2x/pfimg6.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg6.jpg 1x,
+                        ./images/tablet/2x/pfimg6.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg6.jpg 1x,
+                        ./images/desktop/2x/pfimg6.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg6.jpg" alt="Inspiration has no Borders" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi laborum magnam, esse vitae, eius
+                    odit commodi laudantium nihil cupiditate animi accusamus repellat obcaecati deleniti adipisci
+                    voluptatibus? Numquam facilis temporibus nihil!
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Inspiration has no Borders</h3>
+                <p class="card__box--text-regular">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg7.jpg 1x,
+                        ./images/mobile/2x/pfimg7.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg7.jpg 1x,
+                        ./images/tablet/2x/pfimg7.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg7.jpg 1x,
+                        ./images/desktop/2x/pfimg7.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg7.jpg" alt="Издание Limited Edition" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis magni molestiae illum non
+                    voluptatum tempore eaque impedit nam ipsam hic sunt alias perferendis, quisquam laborum officiis
+                    doloremque? Voluptatem, debitis!
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Издание Limited Edition</h3>
+                <p class="card__box--text-regular">Дизайн</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg8.jpg 1x,
+                        ./images/mobile/2x/pfimg8.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg8.jpg 1x,
+                        ./images/tablet/2x/pfimg8.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg8.jpg 1x,
+                        ./images/desktop/2x/pfimg8.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg8.jpg" alt="Проект LAB" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci totam dolore similique pariatur
+                    optio odio suscipit, ullam reprehenderit ex perspiciatis deleniti delectus magni eos illo voluptate
+                    iure? Molestias, quibusdam aliquid.
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Проект LAB</h3>
+                <p class="card__box--text-regular">Маркетинг</p>
+              </div>
+            </li>
+            <li class="card touch-transform">
+              <picture class="card__img">
+                <source media="(max-width: 767px)" srcset="
+                        ./images/mobile/1x/pfimg9.jpg 1x,
+                        ./images/mobile/2x/pfimg9.jpg 2x" />
+                <source media="(max-width: 1199px)" srcset="
+                        ./images/tablet/1x/pfimg9.jpg 1x,
+                        ./images/tablet/2x/pfimg9.jpg 2x" />
+                <source media="(min-width: 1200px)" srcset="
+                        ./images/desktop/1x/pfimg9.jpg 1x,
+                        ./images/desktop/2x/pfimg9.jpg 2x" />
+                <img class="card__img" src="./images/desktop/2x/pfimg9.jpg" alt="Growing Business" /> 
+              </picture>
+              <div class="card__window">
+                <div class="card__slide touch-transform">
+                  <p class="card__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio sit accusamus quidem
+                    perferendis obcaecati? Ad minus modi voluptates aspernatur dolorem maxime inventore quasi assumenda
+                    consequuntur consectetur. Recusandae corporis eligendi modi.
+                  </p>
+                </div>
+              </div>
+              <div class="card__box">
+                <h3 class="card__title">Growing Business</h3>
+                <p class="card__box--text-regular">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container footer__list">
+      <!--  address -->
+      <div class="footer__adr-box">
+        <!-- Logotype -->
+        <a href="#" class="logo">
+          <span class="logo__part">Web</span>Studio
+        </a>
+        <!-- address -->
+        <address class="footer__address">
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <div class="footer__eaddress">
+            <a class="footer__mail touch-transform" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer__tel touch-transform" href="tel:+380991111111">+38 099 111 11 11</a>
+          </div>
+        </address>
+      </div>
+      <!-- join -->
+      <div class="join">
+        <h3 class="footer__text">Присоединяйтесь</h3>
+        <!-- icon list -->
+        <ul class="socnet">
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- end icon list -->
+      </div>
+      <!-- subscribe -->
+      <div class="subscr">
+        <h3 class="footer__text">Подпишитесь на рассылку</h3>
+        <form class="subscr__form" autocomplete="on">
+          <label for="subscr">
+            <input type="email" name="sscr-email" id="subscr" placeholder="E-mail" class="subscr__input" required />
+          </label>
+          <button type="submit" class="button button__subscr">
+            Подписаться
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

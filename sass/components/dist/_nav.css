@@ -1,0 +1,21 @@
+.nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.nav__item {
+  margin-bottom: 32px;
+}
+.nav__str {
+  color: var(--title-color);
+}
+.nav__str:hover, .nav__str:focus {
+  color: var(--touch-color);
+}
+.nav__str--current {
+  display: flex;
+  flex-direction: column;
+  color: var(--touch-color);
+}

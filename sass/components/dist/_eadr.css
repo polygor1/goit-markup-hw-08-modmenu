@@ -1,0 +1,28 @@
+.eadr {
+  display: flex;
+  padding: 0;
+  flex-direction: column-reverse;
+}
+.eadr__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+  color: var(--regular-color);
+}
+.eadr__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: var(--touch-color);
+}
+.eadr__ico {
+  fill: var(--ico-transparent-color);
+  position: absolute;
+}
+.eadr__mail:hover, .eadr__mail:focus, .eadr__tel:hover, .eadr__tel:focus {
+  color: var(--touch-color);
+  cursor: pointer;
+}

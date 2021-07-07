@@ -1,0 +1,35 @@
+.header {
+  margin-top: 0px;
+  border-bottom: 1px solid var(--border-color);
+  & .container {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: $tablet - 1px) {
+  .header {
+    padding: 16px 0;
+    & .nav {
+      display: none;
+    }
+    & .eadr {
+      display: none;
+    }    
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1px){
+  .header {
+    padding: 21px 0;
+  }
+}
+@media screen and (min-width: $desktop){
+  .header {
+    padding: 24px 0 25px;
+    & .logo {
+      color: var(--logo-dark-color);
+    }
+  }
+}

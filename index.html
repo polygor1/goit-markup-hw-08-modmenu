@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+  <link rel="stylesheet" href="./css/modern-normalize.css" />
+  <link rel="preconnect" href="./images/icons.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <!-- Logotype -->
+      <a class="logo" href="./index.html">
+        <span class="logo__part">Web</span>Studio
+      </a>
+      <!-- Sandwich menu -->
+      <a class="button__menu touch-transform " href="./menu_studio.html">
+        <svg class="button__menu--icon touch-transform" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </a>
+      <!-- Navigation -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__str touch-transform nav__str--current" href="./index.html">Студия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__str touch-transform" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__str touch-transform" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- e-Adress -->
+      <div class="eadr ">
+        <a class="eadr__mail touch-transform" href="mailto:info@devstudio.com">
+          <svg class="eadr__ico touch-transform">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
+        <a class="eadr__tel touch-transform" href="tel:+380961111111">
+          <svg class="eadr__ico touch-transform">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          +38 096 111 11 11
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Main content -->
+  <main>
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container">
+        <h1 class="hero__titul">Эффективные решения<br />для вашего бизнеса</h1>
+        <a href="#" class="button hero__sign-link" data-modal-open>Заказать услугу</a>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="section features">
+      <div class="container">
+        <h2 class="features__title">Особенности</h2>
+        <ul class="features__list">
+          <li class="features__card">
+            <a class="features__icon-item" href="#">
+              <svg class="features__icon">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </a>
+            <h3>Внимание к деталям</h3>
+            <p class="features__text">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="features__card">
+            <a class="features__icon-item" href="#">
+              <svg class="features__icon">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </a>
+            <h3>Пунктуальность</h3>
+            <p class="features__text">
+              Задача организации, в особенности же рамки и место обучения
+              кадров влечет за собой.
+            </p>
+          </li>
+          <li class="features__card">
+            <a class="features__icon-item" href="#">
+              <svg class="features__icon">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </a>
+            <h3>Планирование</h3>
+            <p class="features__text">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="features__card">
+            <a class="features__icon-item" href="#">
+              <svg class="features__icon">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </a>
+            <h3>Современные технологии</h3>
+            <p class="features__text">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Inside -->
+    <section class="section inside">
+      <div class="container">
+        <h2>Чем мы занимаемся</h2>
+        <ul class="inside__list">
+          <li class="inside__card">
+            <picture>
+              <source srcset="
+                      ./images/desktop/1x/box1.jpg 1x,
+                      ./images/desktop/2x/box1.jpg 2x " />
+              <img src="./images/desktop/2x/box1.jpg" alt="Десктопные приложения" width="370" height="294" />
+            </picture>
+            <h3 class="inside__text">Десктопные приложения</h3>
+          </li>
+          <li class="inside__card">
+            <picture>
+              <source srcset="
+                      ./images/desktop/1x/box2.jpg 1x,
+                      ./images/desktop/2x/box2.jpg 2x  " />
+              <img src="./images/desktop/2x/box2.jpg" alt="Мобильные приложения" width="370" height="294" />
+            </picture>
+            <h3 class="inside__text">Мобильные приложения</h3>
+          </li>
+          <li class="inside__card">
+            <picture>
+              <source srcset="
+                      ./images/desktop/1x/box3.jpg 1x,
+                      ./images/desktop/2x/box3.jpg 2x " />
+              <img src="./images/desktop/2x/box3.jpg" alt="Дизайнерские решения" width="370" height="294" />
+            </picture>
+            <h3 class="inside__text">Дизайнерские решения</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Team -->
+    <section class="section team">
+      <div class="container">
+        <h2>Наша команда</h2>
+        <ul class="team__list">
+          <li class="team__card">
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img1.jpg 1x,
+                      ./images/mobile/2x/img1.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img1.jpg 1x,                      
+                      ./images/tablet/2x/img1.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img1.jpg 1x,
+                      ./images/desktop/2x/img1.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img1.jpg" alt="Igor" width="100%" /> 
+            </picture>
+            <div class="team__text">
+              <p class="team__names">Игорь Демьяненко</p>
+              <p class="team__metier">Product Designer</p>
+              <!-- icon list -->
+              <ul class="socnet">
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- end icon list -->
+            </div>
+          </li>
+          <li class="team__card">
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img2.jpg 1x,
+                      ./images/mobile/2x/img2.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img2.jpg 1x,                      
+                      ./images/tablet/2x/img2.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img2.jpg 1x,
+                      ./images/desktop/2x/img2.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img2.jpg" alt="Olga" width="100%" /> 
+            </picture>
+            <div class="team__text">
+              <p class="team__names">Ольга Репина</p>
+              <p class="team__metier">Frontend Developer</p>
+              <!-- icon list -->
+              <ul class="socnet">
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- end icon list -->
+            </div>
+          </li>
+          <li class="team__card">
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img3.jpg 1x,
+                      ./images/mobile/2x/img3.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img3.jpg 1x,                      
+                      ./images/tablet/2x/img3.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img3.jpg 1x,
+                      ./images/desktop/2x/img3.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img3.jpg" alt="Nikolay" width="100%" /> 
+            </picture>
+            <div class="team__text">
+              <p class="team__names">Николай Тарасов</p>
+              <p class="team__metier">Marketing</p>
+              <!-- icon list -->
+              <ul class="socnet">
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- end icon list -->
+            </div>
+          </li>
+          <li class="team__card">
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                      ./images/mobile/1x/img4.jpg 1x,
+                      ./images/mobile/2x/img4.jpg 2x" />
+              <source media="(max-width: 1199px)" srcset="
+                      ./images/tablet/1x/img4.jpg 1x,                      
+                      ./images/tablet/2x/img4.jpg 2x" />
+              <source media="(min-width: 1200px)" srcset="
+                      ./images/desktop/1x/img4.jpg 1x,
+                      ./images/desktop/2x/img4.jpg 2x" />
+              <img class="team__img" src="./images/desktop/2x/img4.jpg" alt="Mihail" width="100%" /> 
+            </picture>
+            <div class="team__text">
+              <p class="team__names">Михаил Ермаков</p>
+              <p class="team__metier">UI Designer</p>
+              <!-- icon list -->
+              <ul class="socnet">
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="socnet__item touch-transform">
+                    <svg class="socnet__icon touch-transform" width="20" height="20">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <!-- end icon list -->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--  Regular customers -->
+    <section class="section customers">
+      <div class="container">
+        <h2 class="customers__title">Постоянные клиенты</h2>
+        <ul class="customers__list">
+          <li class="customers__card">
+            <a class="customers__item touch-transform" href="#">
+              <svg class="customers__icon touch-transform" height="46.7">
+                <use href="./images/icons.svg#icon-group1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__card">
+            <a class="customers__item touch-transform" href="#">
+              <svg class="customers__icon touch-transform" height="52">
+                <use href="./images/icons.svg#icon-group2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__card">
+            <a class="customers__item touch-transform" href="#">
+              <svg class="customers__icon touch-transform" height="41.18">
+                <use href="./images/icons.svg#icon-group3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__card">
+            <a class="customers__item touch-transform" href="#">
+              <svg class="customers__icon touch-transform" height="40.62">
+                <use href="./images/icons.svg#icon-group4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__card">
+            <a class="customers__item touch-transform" href="#">
+              <svg class="customers__icon touch-transform" height="45.43">
+                <use href="./images/icons.svg#icon-group5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="customers__card">
+            <a class="customers__item touch-transform" href="#">
+              <svg class="customers__icon touch-transform" height="43.93">
+                <use href="./images/icons.svg#icon-group6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__list">
+      <!--  address -->
+      <div class="footer__adr-box">
+        <!-- Logotype -->
+        <a href="#" class="logo">
+          <span class="logo__part">Web</span>Studio
+        </a>
+        <!-- address -->
+        <address class="footer__address">
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <div class="footer__eaddress">
+            <a class="footer__mail touch-transform" href="mailto:info@example.com">info@example.com</a>
+            <a class="footer__tel touch-transform" href="tel:+380991111111">+38 099 111 11 11</a>
+          </div>
+        </address>
+      </div>
+      <!-- join -->
+      <div class="join">
+        <h3 class="footer__text">Присоединяйтесь</h3>
+        <!-- icon list -->
+        <ul class="socnet">
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="socnet__item touch-transform">
+              <svg class="socnet__icon touch-transform" width="20" height="20">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- end icon list -->
+      </div>
+      <!-- subscribe -->
+      <div class="subscr">
+        <h3 class="footer__text">Подпишитесь на рассылку</h3>
+        <form class="subscr__form" autocomplete="on">
+          <label for="subscr">
+            <input type="email" name="sscr-email" id="subscr" placeholder="E-mail" class="subscr__input" required />
+          </label>
+          <button type="submit" class="button button__subscr">
+            Подписаться
+            <svg class="button__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal window -->
+  <div class="backdrop is-hidden touch-transform" data-modal>
+    <div class="modal">
+      <button type="reset" class="button__close" data-modal-close>
+        <svg class="button__close--icon touch-transform" width="11" height="11">
+          <use href="./images/icons.svg#icon-closed"></use>
+        </svg>
+      </button>
+      <div class="callback" role="group">
+        <h2 class="callback__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="callback__form">
+          <label for="name" class="callback__label">
+            <span class="callback__text">Имя</span>
+            <span class="callback__wraper touch-transform">
+              <svg class="callback__ico touch-transform" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              <input type="text" name="name" class="callback__input" id="name" required />
+            </span>
+          </label>
+          <label for="tel" class="callback__label">
+            <span class="callback__text">Телефон</span>
+            <span class="callback__wraper touch-transform">
+              <svg class="callback__ico touch-transform" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input type="tel" name="tel" class="callback__input" id="tel" required />
+            </span>
+          </label>
+          <label for="email" class="callback__label">
+            <span class="callback__text">Почта</span>
+            <span class="callback__wraper touch-transform">
+              <svg class="callback__ico touch-transform" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input type="email" name="email" class="callback__input" id="email" required />
+            </span>
+          </label>
+          <label for="feedback" class="callback__label callback__label--comment">
+            <span class="callback__text">Комментарий</span>
+            <textarea class="callback__comment" name="feedback" id="feedback" placeholder="Введите текст">
+            </textarea>
+          </label>
+        </form>
+        <div class="checker">
+          <input type="checkbox" class="checker__checkbox" name="contract" value="consent" id="consent" required>
+          <label class="checker__label" for="consent">
+            <svg class="checker__icon touch-transform" width="16" height="15">
+              <use href="./images/icons.svg#icon-chkbox"></use>
+            </svg>
+            <svg class="checker__icon-check touch-transform" width="16" height="15">
+              <use href="./images/icons.svg#icon-chkbox-check"></use>
+            </svg>
+            <div class="checker__text">
+              <span>Соглашаюсь с рассылкой и принимаю</span>
+              <a href="#" class="checker__text--accent">Условия договора</a>
+            </div>
+          </label>
+        </div>
+        <button type="submit" class="button button__submit touch-transform">Отправить</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <!-- <script src="./js/menu.js"></script> -->
+</body>
+
+</html>

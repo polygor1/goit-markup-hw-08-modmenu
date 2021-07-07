@@ -1,0 +1,25 @@
+.join {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto ;
+
+  @media screen and (min-width: $tablet) {
+  padding: 5px 0 0;
+  }
+
+  & .socnet__item {
+    background-color: var(--background-footer-icon-color);
+  }
+
+  & .socnet__icon {
+    fill: var(--ico-ligt-color);
+  }
+
+  & .socnet__icon:hover,
+  & .socnet__icon:focus,
+  & .socnet__item:hover,
+  & .socnet__item:focus {
+    background-color: var(--ico-accent-color);
+    fill: var(--ico-ligt-accent-color);
+  }
+}

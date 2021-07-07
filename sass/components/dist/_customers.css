@@ -1,0 +1,35 @@
+.customers__title {
+  margin-bottom: 0;
+}
+.customers__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.customers__card {
+  margin-top: 30px;
+}
+@media screen and (max-width: 479px) {
+  .customers__card {
+    margin: 30px auto 0;
+  }
+}
+.customers__icon {
+  fill: var(--ico-custom-color);
+}
+.customers__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 210px;
+  height: 92px;
+  border: 1px solid var(--ico-regular-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.customers__item:hover, .customers__item:focus {
+  border: 1px solid var(--ico-accent-color);
+}
+.customers__item:hover .customers__icon, .customers__item:focus .customers__icon {
+  fill: var(--ico-accent-color);
+}

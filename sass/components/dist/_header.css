@@ -1,0 +1,9 @@
+.header {
+  margin-top: 0px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.header .container {
+  display: flex;
+  max-width: 100%;
+}
