@@ -16,5 +16,20 @@
   border-radius: 4px;
   padding: 40px;
 
+  &__menu {
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(0, 0);
+    background-color: var(--face-color);
+    z-index: 2;
 
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }

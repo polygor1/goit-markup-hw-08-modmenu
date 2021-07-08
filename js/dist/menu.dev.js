@@ -1,10 +1,11 @@
-(() => {
-  const refs = {
+"use strict";
+
+(function () {
+  var refs = {
     openMenuBtn: document.querySelector('[menu-open]'),
     closeMenuBtn: document.querySelector('[menu-close]'),
-    menu: document.querySelector('[mobile-nav]'),
+    menu: document.querySelector('[mobile-nav]')
   };
-
   refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
 

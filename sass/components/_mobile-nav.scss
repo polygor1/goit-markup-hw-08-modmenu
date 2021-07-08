@@ -1,0 +1,32 @@
+.mobile-nav {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 40px;
+  line-height: 1.175;
+  text-align: left;
+
+  &__item {
+    margin-bottom: 32px;
+  }
+
+  &__item:nth-child(1) &__str--current::after {
+    width: 48px;
+  }
+
+  &__item:nth-child(2) &__str--current::after {
+    width: 75px;
+  }
+
+  &__str {
+    color: var(--title-color);
+
+    &:hover,
+    &:focus {
+      color: var(--touch-color);
+    }
+
+    &--current {
+      color: var(--touch-color);
+    }
+  }
+}

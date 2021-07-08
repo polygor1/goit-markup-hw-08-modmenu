@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
   <!-- Header -->
   <header class="header">
     <div class="container">
@@ -24,17 +25,16 @@
         <span class="logo__part">Web</span>Studio
       </a>
       <!-- Sandwich menu -->
-      <a class="button__menu touch-transform" href="./menu_portfolio.html">
+      <button class="button__menu touch-transform" href="#" menu-open>
         <svg class="button__menu--icon touch-transform" width="40" height="40">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
-      </a>
-
+      </button>
       <!-- Navigation -->
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__str touch-transform " href="./index.html">Студия</a>
+            <a class="nav__str touch-transform" href="./index.html">Студия</a>
           </li>
           <li class="nav__item">
             <a class="nav__str touch-transform nav__str--current" href="./portfolio.html">Портфолио</a>
@@ -44,7 +44,6 @@
           </li>
         </ul>
       </nav>
-
       <!-- e-Adress -->
       <div class="eadr ">
         <a class="eadr__mail touch-transform" href="mailto:info@devstudio.com">
@@ -61,7 +60,86 @@
         </a>
       </div>
     </div>
+
+    <!-- Mobile menu -->
+    <div class="modal__menu is-hidden" mobile-nav>
+      <div class=" exit">
+        <!-- Button for exit-->
+        <button type="submit" class="button__exit touch-transform" href="#" menu-close>
+          <svg class="button__exit--icon touch-transform" width="19" height="19">
+            <use href="./images/icons.svg#icon-exit"></use>
+          </svg>
+        </button>
+        <!-- menu item -->
+        <div class="menu">
+          <!-- Mobile Navigation -->
+          <div class="container">
+            <nav class="mobile-nav">
+              <ul class="mobile-nav__list">
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__str touch-transform" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__str touch-transform mobile-nav__str--current"
+                    href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-nav__item">
+                  <a class="mobile-nav__str touch-transform" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- footer mobile menu -->
+          <div>
+            <!-- Mobile e-Adress -->
+            <div class="mobile-eadr container">
+              <a class="mobile-eadr__mail touch-transform" href="mailto:info@devstudio.com">
+                <svg class="mobile-eadr__ico touch-transform" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+              <a class="mobile-eadr__tel touch-transform" href="tel:+380961111111">
+                <svg class="mobile-eadr__ico touch-transform" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </div>
+            <!-- mobile Social network -->
+            <div class="container">
+              <ul class="menu__socnet">
+                <li class="menu__socnet-item">
+                  <a href="#" class="menu__socnet-str touch-transform">
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li class="menu__socnet-item">
+                  <a href="#" class="menu__socnet-str touch-transform">
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li class="menu__socnet-item">
+                  <a href="#" class="menu__socnet-str touch-transform">
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li class="menu__socnet-item">
+                  <a href="#" class="menu__socnet-str touch-transform">
+                    <span>Linkedln</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End footer mobile menu -->
+        </div>
+        <!-- End menu item -->
+      </div>
+    </div>
+    <!-- End mobaile menu -->
   </header>
+
   <!-- Main content -->
   <main>
     <section class="section">
@@ -111,7 +189,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg1.jpg 1x,
                         ./images/desktop/2x/pfimg1.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg1.jpg" alt="Технокряк" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg1.jpg" alt="Технокряк" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -140,7 +218,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg2.jpg 1x,
                         ./images/desktop/2x/pfimg2.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg2.jpg" alt="Постер New Orlean vs Golden Star" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg2.jpg" alt="Постер New Orlean vs Golden Star" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -167,7 +245,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg3.jpg 1x,
                         ./images/desktop/2x/pfimg3.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg3.jpg" alt="Ресторан Seafood" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg3.jpg" alt="Ресторан Seafood" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -194,7 +272,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg4.jpg 1x,
                         ./images/desktop/2x/pfimg4.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg4.jpg" alt="Проект Prime" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg4.jpg" alt="Проект Prime" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -221,7 +299,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg5.jpg 1x,
                         ./images/desktop/2x/pfimg5.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg5.jpg" alt="Проект Boxes" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg5.jpg" alt="Проект Boxes" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -248,7 +326,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg6.jpg 1x,
                         ./images/desktop/2x/pfimg6.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg6.jpg" alt="Inspiration has no Borders" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg6.jpg" alt="Inspiration has no Borders" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -275,7 +353,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg7.jpg 1x,
                         ./images/desktop/2x/pfimg7.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg7.jpg" alt="Издание Limited Edition" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg7.jpg" alt="Издание Limited Edition" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -302,7 +380,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg8.jpg 1x,
                         ./images/desktop/2x/pfimg8.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg8.jpg" alt="Проект LAB" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg8.jpg" alt="Проект LAB" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -329,7 +407,7 @@
                 <source media="(min-width: 1200px)" srcset="
                         ./images/desktop/1x/pfimg9.jpg 1x,
                         ./images/desktop/2x/pfimg9.jpg 2x" />
-                <img class="card__img" src="./images/desktop/2x/pfimg9.jpg" alt="Growing Business" /> 
+                <img class="card__img" src="./images/desktop/2x/pfimg9.jpg" alt="Growing Business" />
               </picture>
               <div class="card__window">
                 <div class="card__slide touch-transform">
@@ -350,6 +428,7 @@
       </div>
     </section>
   </main>
+
   <!-- footer -->
   <footer class="footer">
     <div class="container footer__list">
@@ -421,6 +500,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- js -->
+  <script src="./js/menu.js"></script>
 
 </body>
 
