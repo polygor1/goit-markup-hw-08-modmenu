@@ -12,6 +12,10 @@
     width: 75px;
   }
 
+  &__item:nth-child(3) &__str--current::after {
+    width: 66px;
+  }
+  
   &__str {
     color: var(--title-color);
 

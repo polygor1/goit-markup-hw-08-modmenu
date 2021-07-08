@@ -211,6 +211,10 @@ ul {
   width: 75px;
 }
 
+.nav__item:nth-child(3) .nav__str--current::after {
+  width: 66px;
+}
+
 .nav__str {
   color: var(--title-color);
 }
@@ -1652,5 +1656,10 @@ ul {
   letter-spacing: 0.03em;
   color: var(--regular-color);
   margin-top: 4px;
+}
+
+.video {
+  display: flex;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
