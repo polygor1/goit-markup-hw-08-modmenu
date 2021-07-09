@@ -63,7 +63,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   h2 {
-    font-style: 36px;
+    font-size: 36px;
     line-height: 1.667;
     margin-bottom: 50px;
   }
@@ -199,6 +199,14 @@ ul {
   }
 }
 
+.nav {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  align-items: center;
+}
+
 .nav__item {
   margin-bottom: 32px;
 }
@@ -244,11 +252,7 @@ ul {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
-    display: flex;
     position: absolute;
-    font-size: 14px;
-    line-height: 1.1428;
-    align-items: center;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -264,12 +268,6 @@ ul {
 }
 
 @media screen and (min-width: 1200px) {
-  .nav {
-    display: flex;
-    font-size: 14px;
-    line-height: 1.1428;
-    align-items: center;
-  }
   .nav__list {
     display: flex;
     justify-content: left;
@@ -280,6 +278,10 @@ ul {
   .nav__item:not(:last-child) {
     margin-right: 50px;
   }
+}
+
+.eadr {
+  font-weight: 500;
 }
 
 .eadr__mail:hover, .eadr__mail:focus, .eadr__tel:hover, .eadr__tel:focus {
@@ -293,35 +295,6 @@ ul {
 .eadr__tel:focus .eadr__ico {
   fill: var(--touch-color);
   cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  .eadr {
-    display: flex;
-    padding: 0;
-    justify-content: start;
-    flex-direction: column-reverse;
-  }
-  .eadr__mail, .eadr__tel {
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    justify-content: start;
-    margin-left: 0;
-  }
-  .eadr__mail {
-    font-size: 24px;
-    line-height: 1.167;
-    margin-top: 32px;
-    color: var(--regular-color);
-  }
-  .eadr__tel {
-    font-size: 34px;
-    line-height: 1.176;
-    color: var(--touch-color);
-  }
-  .eadr__ico {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -827,17 +800,17 @@ ul {
 }
 
 .customers__list {
-  display: grid;
-  margin-top: 30px;
-  grid-column-gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .customers__list {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 0;
+    display: grid;
+    grid-column-gap: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -859,6 +832,7 @@ ul {
   .customers__list {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 0;
+    margin-top: 50px;
   }
 }
 
@@ -866,7 +840,7 @@ ul {
   width: 210px;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   .customers__card {
     margin: 30px auto 0;
   }

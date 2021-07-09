@@ -5,15 +5,17 @@
   }
 
   &__list {
-    display: grid;
-      margin-top: 30px;
-      grid-column-gap: 30px;
-
-    @media screen and (max-width: $mobile - 1px) {
       display: flex;
       justify-content: center;
       flex-direction: column;
+
       margin-top: 0;
+
+    @media screen and (min-width: $mobile) {
+      display: grid;
+      grid-column-gap: 30px;
+
+      margin-top: 30px;
     }
     @media screen and (min-width: $mobile) and (max-width: $tablet - 1px) {
       grid-template-columns: 1fr 1fr;
@@ -28,13 +30,16 @@
     @media screen and (min-width: $desktop) {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-row-gap: 0;
+
+      margin-top: 50px;
+
     }
   }
 
   &__card {
     width: 210px;
 
-    @media screen and (max-width: $mobile - 1px) {
+    @media screen and (max-width: $mobile) {
           margin: 30px auto 0;
 
     }

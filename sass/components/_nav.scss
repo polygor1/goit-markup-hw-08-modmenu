@@ -1,4 +1,10 @@
 .nav {
+    display: flex;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    align-items: center;
 
   &__item {
     margin-bottom: 32px;
@@ -49,11 +55,8 @@
 
 @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
   .nav {
-    display: flex;
     position: absolute;
-    font-size: 14px;
-    line-height: 1.1428;
-    align-items: center;
+
     left: 50%;
     transform: translateX(-50%);
 
@@ -72,10 +75,10 @@
 
 @media screen and (min-width: $desktop) {
   .nav {
-    display: flex;
-    font-size: 14px;
-    line-height: 1.1428;
-    align-items: center;
+    // display: flex;
+    // font-size: 14px;
+    // line-height: 1.1428;
+    // align-items: center;
 
     &__list {
       display: flex;
